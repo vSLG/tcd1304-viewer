@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "tcd1304-viewer"
+version = "0.1.0"
+description = ""
+authors = ["vslg <slgf@protonmail.ch>"]
+readme = "README.md"
+packages = [{include = "tcd1304_viewer"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-dotenv = "^1.0.0"
+matplotlib = "^3.7.1"
+pyserial = "^3.5"
+
+
+[tool.poetry.group.dev.dependencies]
+yapf = "^0.33.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
